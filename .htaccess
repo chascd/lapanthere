@@ -1,12 +1,12 @@
 # BEGIN Cache-Control Headers
 <IfModule mod_headers.c>
-<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+<FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz|jpg|webp|svg)$">
 Header set Cache-Control "max-age=2592000, public"
 </FilesMatch>
 <FilesMatch "\.(js)$">
 Header set Cache-Control "max-age=2592000, private"
 </FilesMatch>
-<filesMatch "\.(html|htm)$">
+<filesMatch "\.(html|htm|css)$">
 Header set Cache-Control "max-age=7200, public"
 </filesMatch>
 # Enleve le cache pour les ressources dynamiques
