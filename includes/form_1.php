@@ -10,6 +10,9 @@
 	$message = $_POST['message'];
 	
 	$to = 'receiver@yoursite.com'; // Email submissions are sent to this email
+	
+// Set Cache-Control header
+header('Cache-Control: max-age=86400');
 
 	// Create email	
 	$email_subject = "Message from your website";
